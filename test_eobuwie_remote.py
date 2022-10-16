@@ -17,8 +17,8 @@ class RejestracjaNowegoUzytkownika(unittest.TestCase):
     def setUp(self):
         # WARUNKI WSTĘPNE
         # 1. Otwarta strona główna
-        #self.driver = webdriver.Chrome()
-        self.driver = webdriver.Remote(command_executor='http://127.0.0.1:4444/wd/hub',
+        self.driver = webdriver.Chrome()
+        #self.driver = webdriver.Remote(command_executor='http://127.0.0.1:4444/wd/hub',
                                        desired_capabilities=DesiredCapabilities.EDGE)
         self.driver.maximize_window()
         self.driver.get("https://www.eobuwie.com.pl/")
